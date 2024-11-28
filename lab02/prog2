@@ -1,0 +1,12 @@
+задание 2 на python
+def triangle(a, b, c):
+    return a + b > c and a + c > b and b + c > a
+
+# Пример использования функции
+a = 3
+b = 4
+c = 5
+if triangle(a, b, c):
+    print("Можно построить треугольник")
+else:
+    print("Невозможно построить треугольник")
