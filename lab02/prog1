@@ -1,0 +1,14 @@
+19 задание на с++
+#include <iostream>
+using namespace std;
+
+int main() {
+    double x1, y1, x2, y2;
+    cout << "Введите координаты векторов A и B: ";
+    cin >> x1 >> y1 >> x2 >> y2;
+
+    double crossProduct = x1 * y2 - y1 * x2;
+    cout << "Векторное произведение: " << crossProduct << endl;
+
+    return 0;
+}
