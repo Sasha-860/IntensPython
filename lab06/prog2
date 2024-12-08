@@ -1,0 +1,19 @@
+задание номре 2 на си++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, sum = 0, i = 1;
+
+    cout << "Введите число n: ";
+    cin >> n;
+
+    do {
+        sum += i;
+        i++;
+    } while (i <= n);
+
+    cout << "Сумма чисел от 1 до " << n << ": " << sum << endl;
+
+    return 0;
+}
