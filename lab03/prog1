@@ -1,1 +1,16 @@
+задание 14 на pyrhon 
+def rubles_and_kopecks(n):
+    rubles = n // 100
+    kopecks = n % 100
+    
+    if rubles == 0:
+        return f"{kopecks} копеек"
+    elif kopecks == 0:
+        return f"{rubles} рублей"
+    else:
+        return f"{rubles} рублей {kopecks} копеек"
 
+# Пример использования
+n = 321
+result = rubles_and_kopecks(n)
+print(result)  
