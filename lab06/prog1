@@ -1,0 +1,16 @@
+задание номер 21 на python
+n = int(input("Введите натуральное число n: "))
+
+total_sum = 0.0
+i = 1
+
+while True:
+    term = 1 / (2*i)**2
+    total_sum += term
+    
+    if i == n:
+        break
+    
+    i += 1
+
+print(f"Сумма ряда: {total_sum}")
