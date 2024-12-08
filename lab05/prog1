@@ -1,0 +1,13 @@
+задание номер 30 на python 
+correct_password = '228'
+attempts_left = 6
+
+while attempts_left > 0:
+    password_input = input(f'Введите пароль ({attempts_left} попыток осталось): ')
+    if password_input == correct_password:
+        print('Молодец!')
+        break
+    else:
+        attempts_left -= 1
+else:
+    print('Пароль введен неправильно.')
