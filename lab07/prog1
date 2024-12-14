@@ -1,0 +1,14 @@
+задние номер 27 на python 
+def check_alternating(arr):
+    for i in range(1, len(arr)):
+        if arr[i - 1] % 2 == arr[i] % 2:
+            return i
+    return 0
+
+# Пример использования
+arr = [1, 2, 3, 4, 5]
+result = check_alternating(arr)
+if result == 0:
+    print("Чередование четных и нечетных чисел соблюдено.")
+else:
+    print(f"На позиции {result} нарушено чередование.")
