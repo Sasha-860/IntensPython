@@ -1,0 +1,32 @@
+задание номер 30 на языке си
+#include <limits.h>
+#include <stdio.h>
+
+int find_max_odd_indexed_element(int* array, int size) {
+    if (size < 2) {
+        return -1; // Если размер массива меньше двух, вернуть ошибку
+    }
+
+    int max_value = INT_MIN; // Начальное минимальное значение
+    for (int i = 1; i < size; i += 2) {
+        if (array[i] > max_value) {
+            max_value = array[i];
+        }
+    }
+
+    return max_value;
+}
+
+int main() {
+    int array[] = {3, 8, 12, 5, 17, 19};
+    int size = sizeof(array) / sizeof(array[0]);
+
+    int max_value = find_max_odd_indexed_element(array, size);
+    if (max_value != -1) {
+        printf("Максимальный элемент с нечетным номером: %d\n", max_value);
+    } else {
+        printf("Ошибка: массив слишком маленький.\n");
+    }
+
+    return 0;
+}
